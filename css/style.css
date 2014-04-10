@@ -5,6 +5,11 @@
 
 body {
 	font-size: 14px;
+	font-family: arial, sans-serif
+}
+
+a {
+	text-decoration: none;
 }
 
 .clearfix {
@@ -21,9 +26,35 @@ body {
 	border: 1px solid #000;
 }
 
+.main-menu ul {
+	position: relative;
+	top: 5px;
+	left: 15px;
+}
+
+.main-menu ul li{
+	list-style-type: none;
+	float: left;
+}
+
+.main-menu ul li a {
+	display: block;
+	line-height: 30px;
+	padding: 5px;
+	width: 60px;
+	text-align: center;
+	color: #3c9dd0;
+}
+
+.main-menu ul li a:hover {
+	background: #ccc;
+	color: #fff;
+}
+
 #logo {
 	font-size: 25px;
 	padding: 10px;
+	float: left;
 }
 
 #slider {
@@ -32,19 +63,30 @@ body {
 }
 
 .button {
-	border: 1px solid #000;
-	width: 250px;
-	height: 50px;
-	position: relative;
-	top: -25px;
-	left: 40%;
-	z-index: 2;
-	background: #fff;
+	background: #f5f5f5;	
+	cursor: pointer;
+	text-shadow: 0 1px 0 white;
+	-moz-border-radius: 10px;
+  -webkit-border-radius:10px;
+  border-radius: 10px;
+  outline: none;
+
 }
 
 #content {
 	float: left;
 	width: 53%;
+}
+
+.main-button-container {
+	width: 250px;
+	height: 50px;
+	margin: -25px auto 15px auto;
+}
+
+.main-button-container button {
+	width: 250px;
+	height: 50px;
 }
 
 .content-description {
